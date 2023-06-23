@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<br>
+  <html>
+  <head>
+    <title>Create Project Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h4>Add Project Tasks</h4>
+      <form>
+        <div class="form-group">
+          <label for="projectName">Project Id:</label>
+          <input type="text" class="form-control" id="projectName" placeholder="Enter the project name" [(ngModel)]="projectName" name="projectName">
+        </div>
+
+
+        <div class="form-group">
+          <label for="projectName">Task Id:</label>
+          <input type="text" class="form-control" id="projectName" placeholder="Enter the project name" [(ngModel)]="projectName" name="projectName">
+        </div>
+
+
+        <div class="form-group">
+          <label for="projectName">Task Name:</label>
+          <input type="text" class="form-control" id="projectName" placeholder="Enter the project name" [(ngModel)]="projectName" name="projectName">
+        </div>
+
+
+
+        <div class="form-group">
+          <label for="description">Task Description:</label>
+          <textarea class="form-control" id="description" placeholder="Enter the project description" [(ngModel)]="taskDescription" name="taskDescription"></textarea>
+        </div>
+
+
+        <div class="form-group">
+          <label for="projectName">user Id:</label>
+          <input type="text" class="form-control" id="projectName" placeholder="Enter the project name" [(ngModel)]="projectName" name="projectName">
+        </div>
+
+        <button type="submit" class="btn btn-primary" >Add Task</button>
+        &nbsp;
+        <button class="submitBtn" type="submit" class="btn btn-primary"  [routerLink]="['/create-project']">Cancel</button>
+     
+      </form>
+    </div>
+
+    <!-- <-- Include Angular and Bootstrap JS files here -->
+  </body>
+  </html>
